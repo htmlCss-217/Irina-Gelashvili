@@ -1,0 +1,67 @@
+ 
+body{
+    margin:0;
+}
+ 
+header{
+    background-image: url("images/fa5d843238ef978c2de7c13a290ebd62.jpg");
+    margin: none;
+    width: 1439px;
+    height: 120px;
+    color:  rgba(0, 0, 0, 0.5);
+}
+.logo{
+     width: 150px;
+    height: 70px;    
+    font-weight: 500;
+    font-size: 48px;
+    color:  rgba(255, 255, 255, 1);
+    margin-left: 130px;
+  
+} 
+ 
+
+ .Links{
+    font-size: 24px;
+    font-weight: 500;
+    width: 407px;
+    height: 36px;
+    margin-left: 712px;
+    margin-top: 42px;
+    gap: 50px;
+    display: flex;
+    text-decoration: none;
+}
+ .Links a{
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 1);
+ }
+ .links a:hover{
+    text-decoration: underline;
+ }
+ .Blog button{
+    background-color: rgba(255, 255, 255, 1);
+    width: 141px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    color:  rgba(62, 134, 245, 1);
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 130px;
+   
+  
+ }
+
+ .Blog{
+    margin-right: 130px;
+     margin-top:27px ;
+     margin-left: 30px;
+    
+ }
+ nav{
+    font-family: Poppins;
+    display: flex;
+   
+    
+ }
