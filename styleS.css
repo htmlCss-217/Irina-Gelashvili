@@ -482,65 +482,6 @@ body{
     text-decoration: underline;
 }
 
-
- 
-/* რეგისტრაციის სტილი 
-main .registration{
-   height: 400px;  
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 10px;
-   margin-top: 500px; 
-   position: relative; 
-   bottom: 400px; 
-} 
- 
-
-.registration h1{
-   font-size: 25px;
-   font-weight: 500;
-   color: #0a4a86;
-}
-.reginfo p{
-   font-weight: 500;
-}
-.reginfo input{
-   height: 45px;
-   width: 250px;
-   font-size: 16px;
-   border-radius: 5px;
-   border: 1px solid #ccc;
-}
-.reginfo{
-   display: flex;
-   gap: 50px;
- }
-
-.regbtn{
-   height: 35px;
-   width: 250px;
-   background-color: #dfc119;
-   font-size: 16px;
-   border-radius: 5px;
-   padding-left: 15px;
-   font-size: 18px;
-   font-weight: 500;
-   position: absolute;
-   margin-top:500px;
-
- }
-.regbtn a{
-   padding: 50px 30px;
-   color: #12141b;
-   border-radius: 5px;
-   font-weight: bold;
-   text-decoration: none;
-   margin: 50px 50px; 
-        
-} */
-
 /* კონტაქტი */
 .contact{
     margin-left: 50px;
@@ -589,6 +530,7 @@ main .registration{
 .gallery{
     margin-left: 50px;
     margin-bottom: 250px;
+    margin-right: 50px;
 }
 .anime{
     width: 300px;
@@ -599,7 +541,7 @@ main .registration{
     padding: 8px;
     animation-name: animetext;
     animation-duration: 5s;
-    animation-timing-function: ease;
+    animation-timing-function: easy;
     animation-direction: normal;
     animation-iteration-count: infinite;
     position: relative;
@@ -715,5 +657,99 @@ form .button input {
   background:   #71b7e6;
 }
 
-form .button input:hover {
-    background:   #65879e;}
+
+/* მობილური მენიუ */
+.mobile-menu-icon {
+    display: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff; 
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #001f3f;
+    padding-top: 20px;
+}    
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        display: none; /* მენიუ დამალულია მცირე ეკრანებისთვის */
+    }
+    .register-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block; /* მობილური მენიუს ხატულა აქტიური */
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .discover-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* პლანშეტი (768px ) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .discover-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* ლეპტოპები ) */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 15px 40px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .discover-btn {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-links {
+        display: none;  
+    }
+
+    .mobile-menu-icon {
+        display: block;  
+    }
+
+    .mobile-menu {
+        display: block;  
+        transform: translateX(100%);
+    }
+
+    .navbar:hover .mobile-menu {
+        transform: translateX(0);  
+    }
+}
